@@ -58,6 +58,9 @@ df["indice_legado"] = df["fator_legado"].cumprod() * 100
 df["indice_bbg_365"] = df["fator_bbg_365"].cumprod() * 100
 df["indice_bbg_252"] = df["fator_bbg_252"].cumprod() * 100
 
+df.to_csv("simulacao_completa.csv", index=False)
+print("💾 Arquivo 'simulacao_completa.csv' salvo com sucesso!")
+
 # ==========================================
 # PASSO 4: Relatório de Risco e Gráfico
 # ==========================================
